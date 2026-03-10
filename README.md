@@ -36,7 +36,7 @@ This skill activates for questions about:
 - Hadith, Quran tafsir, fatawa
 - Halal/haram rulings, marriage, family in Islam
 - Tazkiyatun nafs (spiritual purification)
-- Questions starting with: *"dalam Islam"*, *"menurut Islam"*, *"hukum Islam"*, *"bolehkah dalam Islam"*, *"apakah haram"*, *"apa sunnah"*
+- Questions starting with: *"dalam Islam"*, *"menurut Islam"*, *"hukum Islam"*, *"bolehkah dalam Islam"*, *"apakah haram"*, *"apa sunnah"*, *"in Islam"*, *"according to Islam"*, *"is it haram"*, *"is it sunnah"*, *"Islamic ruling on"*, *"what does Islam say about"*
 
 ---
 

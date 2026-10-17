@@ -6,7 +6,7 @@ It ships for Claude Code, Codex, OpenClaw, Hermes and ChatGPT. An optional copy-
 
 ## Install
 
-Each command below was checked against the vendor docs on 2026-10-17.
+Most commands below were checked against the vendor docs on 2026-10-17. The ones marked (verify) could not be confirmed.
 
 ### Claude Code
 
@@ -87,7 +87,7 @@ An optional, separate file, [`persona/islamic-adab.md`](persona/islamic-adab.md)
 
 Notes:
 
-- The raw URLs work once this branch is merged to `main`.
+- Create the target directory first if it does not exist (`mkdir -p ~/.claude`, `~/.codex`, `~/.openclaw/workspace` or `~/.hermes`).
 - For Codex use `~/.codex/AGENTS.md`, never `AGENTS.override.md`, which replaces your own file.
 - The file is wrapped in `<!-- islamic-adab:start -->` and `<!-- islamic-adab:end -->` markers.
 - Re-running a one-liner appends a duplicate. To update, replace the block between the markers. To remove, delete the block.
@@ -111,4 +111,4 @@ evals/                 behaviour eval cases
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md). Maintainers: the AI review and eval workflows need one-time setup, see [Maintainer setup](CONTRIBUTING.md#maintainer-setup).

@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - run: pip install skills-ref
+      - run: pip install skills-ref==0.1.1
       - run: npm i -g @anthropic-ai/claude-code
       - run: agentskills validate skills/islamic-salafi
       - run: claude plugin validate .

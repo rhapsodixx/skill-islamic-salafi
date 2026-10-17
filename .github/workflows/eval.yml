@@ -1,8 +1,23 @@
 name: eval
 on:
   pull_request:
+    paths:
+      - "skills/**"
+      - "persona/**"
+      - "evals/**"
+      - ".claude-plugin/**"
+      - ".github/workflows/eval.yml"
   push:
     branches: [main]
+    paths:
+      - "skills/**"
+      - "persona/**"
+      - "evals/**"
+      - ".claude-plugin/**"
+      - ".github/workflows/eval.yml"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:

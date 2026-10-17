@@ -94,7 +94,6 @@ The Salafi position: Iman increases through acts of obedience and decreases thro
 - Muslim.or.id — Aqeedah category (Indonesian)
 - islamqa.info — Aqeedah fatwa database (English/Arabic)
 
-
 # references/fiqh-ibadah.md
 
 # Fiqh Al-Ibadah Reference — Acts of Worship (Manhaj Salaf + Shafi'i)
@@ -220,7 +219,6 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 - BimbinganIslam.com (BiAS) — Daily structured Q&A (Indonesian)
 - Alifta.net — Lajnah Da'imah official rulings
 
-
 # references/muamalah.md
 
 # Muamalah Reference — Islamic Transactions (Manhaj Salaf)
@@ -300,7 +298,6 @@ An Islamic contract requires:
 - islamqa.info — Muamalah and financial transactions category
 - Alifta.net — Lajnah Da'imah financial fatwas
 - KonsultasiSyariah.com — Fiqh-based Q&A (Indonesian)
-
 
 # references/tazkiyah.md
 

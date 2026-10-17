@@ -6,6 +6,9 @@ export LC_ALL=C
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 SKILL="$ROOT/skills/islamic-salafi"
 OUT=${1:-$ROOT/chatgpt}
+[ -f "$SKILL/SKILL.md" ] || { echo "build-chatgpt: missing $SKILL/SKILL.md" >&2; exit 1; }
+set -- "$SKILL"/references/*.md
+[ -f "$1" ] || { echo "build-chatgpt: no .md files in $SKILL/references" >&2; exit 1; }
 mkdir -p "$OUT"
 
 # Drop trailing blank lines so output ends with exactly one newline.
@@ -23,8 +26,8 @@ NOTE='Reference material (aqeedah, fiqh, muamalah, tazkiyah, sources, examples) 
   printf '\n%s\n' "$NOTE"
 } | trim > "$OUT/instructions.md"
 
-for f in "$SKILL"/references/*.md; do
+for f in "$@"; do
   printf '# references/%s\n\n' "$(basename "$f")"
   tr -d '\r' < "$f"
-  printf '\n\n'
+  printf '\n'
 done | trim > "$OUT/knowledge.md"

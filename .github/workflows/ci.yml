@@ -1,0 +1,25 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: pip install skills-ref==0.1.1
+      - run: npm i -g @anthropic-ai/claude-code
+      - run: agentskills validate skills/islamic-salafi
+      - run: claude plugin validate .
+      - run: python3 scripts/test_check.py
+      - run: python3 scripts/check.py
+      - run: npx --yes markdownlint-cli2

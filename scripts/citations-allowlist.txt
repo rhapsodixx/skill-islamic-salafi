@@ -1,0 +1,14 @@
+# Verified citations allowed in skills/**/*.md (normalized "<source> <number>").
+islamqa 1027
+islamqa 2178
+islamqa 13973
+islamqa 22905
+islamqa 360668   # TODO(maintainer): verify
+bukhari 2697
+muslim 1718
+abu dawud 179
+muslim 399
+muslim 360
+muslim 91
+muslim 597
+muslim 1163

@@ -1,166 +1,114 @@
-# Islamic Salafi Skill — OpenClaw Skill
+# Islamic Salafi Skill
 
-An [OpenClaw](https://openclaw.ai) skill that provides Islamic knowledge strictly within the **Manhaj Salaf** (Salafi methodology), adhering to the aqeedah and manhaj of **Ahlus Sunnah wal Jama'ah** based on the understanding of the **Salafush Shalih** (the pious predecessors: Sahabah, Tabi'een, and Tabi'ut Tabi'een).
+A multi-platform agent skill that answers Islamic questions within the Manhaj Salaf (Ahlus Sunnah wal Jama'ah, on the understanding of the Salafush Shalih). It is evidence-first: Quran and authentic Sunnah, then named scholars. Shafi'i is the default fiqh framework, and the skill replies in English or Bahasa Indonesia to match the user. It declines out-of-scope methodologies and says so when it is unsure.
 
----
+It ships for Claude Code, Codex, OpenClaw, Hermes and ChatGPT. An optional copy-paste [adab persona](#persona) is included.
 
-## Overview
+## Install
 
-This skill is designed for use with **[OpenClaw](https://openclaw.ai)** — an open-source personal AI assistant framework. It must be installed manually (it is not listed in the OpenClaw Skills Registry).
+Most commands below were checked against the vendor docs on 2026-10-17. The ones marked (verify) could not be confirmed.
 
-Once installed, the skill intercepts Islamic questions and responds using a structured, daleel-based (evidence-based) methodology grounded in:
-
-- The Quran and authentic Sunnah
-- Shafi'i madhab as the default fiqh framework (reflecting the Indonesian Muslim majority)
-- Recognized Salafi scholarship — Indonesian and international
-
----
-
-## Features
-
-- **Bilingual** — Responds in Bahasa Indonesia or English based on the user's language
-- **Daleel-first** — Every ruling is backed by Quran, hadith (with grading), or ijma' of the Salaf
-- **Shafi'i-primary** — Presents the Shafi'i position first, then notes stronger cross-madhab opinions where applicable
-- **Scholar-cited** — References recognized Indonesian Ustaz and international Kibar Ulama
-- **Bid'ah awareness** — Identifies and gently corrects practices contrary to the Salafi manhaj
-- **Scope-bounded** — Politely declines non-Salafi methodologies, partisan political Islam, and unverified fatwas
-
----
-
-## Trigger Keywords
-
-This skill activates for questions about:
-
-- Aqeedah (creed), tawhid, shirk, bid'ah
-- Fiqh (jurisprudence), ibadah (worship), muamalah (transactions)
-- Hadith, Quran tafsir, fatawa
-- Halal/haram rulings, marriage, family in Islam
-- Tazkiyatun nafs (spiritual purification)
-- Questions starting with: *"dalam Islam"*, *"menurut Islam"*, *"hukum Islam"*, *"bolehkah dalam Islam"*, *"apakah haram"*, *"apa sunnah"*, *"in Islam"*, *"according to Islam"*, *"is it haram"*, *"is it sunnah"*, *"Islamic ruling on"*, *"what does Islam say about"*
-
----
-
-## Response Format
-
-Every response follows a structured three-part format:
-
-1. **Daleel (Evidence)** — Quran verse, authentic hadith, or ijma' of the Salaf
-2. **Scholar Position** — Specific scholar(s) or institution cited
-3. **Practical Application** — Actionable guidance for the questioner
-
-Responses open with *Bismillah* or *Alhamdulillah* and close with *Wallahu a'lam*.
-
----
-
-## File Structure
-
-```
-skill-islamic-salafi/
-├── SKILL.md                  # Skill definition and full instruction set
-├── README.md                 # This file
-├── references/
-│   ├── aqeedah.md            # Core creed: tawhid, shirk, bid'ah, iman
-│   ├── fiqh-ibadah.md        # Worship: salah, zakat, sawm, hajj, taharah
-│   ├── muamalah.md           # Finance: riba, contracts, crypto, stocks, e-commerce
-│   └── tazkiyah.md           # Spiritual purification, adhkar, tawbah
-└── .gitignore
-```
-
----
-
-## Key Scholar References
-
-### Indonesian Scholars (Ustaz)
-- Ustaz Khalid Basalamah — General fiqh, aqeedah, dawah
-- Ustaz Firanda Andirja — Aqeedah, fiqh, hadith
-- Ustaz Erwandi Tarmizi — *Specialist: muamalah & financial fiqh*
-- Ustaz Yazid bin Abdul Qadir Jawas (rahimahullah) — Foundational aqeedah
-
-### International Kibar Ulama
-- Shaykh Ibn Baz (rahimahullah) — [binbaz.org.sa](https://binbaz.org.sa)
-- Shaykh Ibn Uthaymeen (rahimahullah) — [ibnothaimeen.com](https://ibnothaimeen.com)
-- Shaykh Al-Albani (rahimahullah) — Hadith tashih/tadh'if
-- Shaykh Salih Al-Fawzan — [alfawzan.net](https://alfawzan.net)
-
-### Fatwa Databases
-- [islamqa.info](https://islamqa.info) — Shaykh Munajjid's comprehensive fatwa database
-- [alifta.net](https://alifta.net) — Lajnah Da'imah (Saudi official fatwa council)
-- [rumaysho.com](https://rumaysho.com) — Indonesian everyday fiqh & hadith
-- [muslim.or.id](https://muslim.or.id) — Indonesian aqeedah & fiqh
-
----
-
-## Scope & Limitations
-
-**In scope:**
-- Aqeedah, fiqh, tazkiyah, muamalah, fatawa within Salafi/Ahlus Sunnah methodology
-
-**Out of scope** (responded to with polite clarification):
-- Non-Salafi aqeedah methodologies (Ash'ari, Maturidi, Sufi tariqah) — except for educational contrast
-- Partisan political Islam or hizbiyyah
-- Novel fatwas without traceable Salafi or Shafi'i scholarly basis
-
----
-
-## Installation (OpenClaw)
-
-This skill is **not** available in the OpenClaw Skills Registry and must be installed manually. Follow the steps below.
-
-### Prerequisites
-
-- [OpenClaw](https://openclaw.ai) installed and configured
-- `git` installed
-
-### Step 1 — Clone the repository
-
-Clone this repo into your OpenClaw shared skills directory:
+### Claude Code
 
 ```bash
-git clone https://github.com/your-username/skill-islamic-salafi ~/.openclaw/skills/islamic-salafi
+claude plugin marketplace add rhapsodixx/skill-islamic-salafi
+claude plugin install islamic-salafi@islamic-salafi-skills
 ```
 
-> Alternatively, if you want the skill scoped to a single workspace only, clone it into `<your-workspace>/skills/islamic-salafi` instead.
+Inside a session the same steps are `/plugin marketplace add rhapsodixx/skill-islamic-salafi` and `/plugin install islamic-salafi@islamic-salafi-skills`. Run `/reload-plugins` if prompted.
 
-### Step 2 — Verify the skill is detected
+### Codex
+
+Codex reads user skills from `~/.agents/skills` (or `.agents/skills` in a repo):
 
 ```bash
-openclaw skills list
+git clone https://github.com/rhapsodixx/skill-islamic-salafi /tmp/skill-islamic-salafi
+mkdir -p ~/.agents/skills
+cp -r /tmp/skill-islamic-salafi/skills/islamic-salafi ~/.agents/skills/
 ```
 
-You should see `islamic-salafi` in the list. If not, confirm the folder exists at `~/.openclaw/skills/islamic-salafi/` and that `SKILL.md` is present inside it.
+Codex detects new skills automatically; restart it if the skill does not appear. You can also ask `$skill-installer` to fetch it from this repository (verify: the installer's exact syntax for third-party repositories is not documented on the skills page).
 
-### Step 3 — Enable the skill (if needed)
+### OpenClaw
 
-If the skill does not appear as eligible, explicitly enable it in `~/.openclaw/openclaw.json`:
+The skill lives in `skills/islamic-salafi/`, not at the repository root, and OpenClaw's `git:` source needs `SKILL.md` at the source root. Install from a local clone:
 
-```json
-{
-  "skills": {
-    "entries": {
-      "islamic-salafi": {
-        "enabled": true
-      }
-    }
-  }
-}
+```bash
+git clone https://github.com/rhapsodixx/skill-islamic-salafi /tmp/skill-islamic-salafi
+openclaw skills install /tmp/skill-islamic-salafi/skills/islamic-salafi
 ```
 
-Then restart OpenClaw for the change to take effect.
+Add `--global` to share it with all local agents. Reinstall to update. Alternatively copy the folder to `~/.agents/skills`.
 
-### Step 4 — Use the skill
+### Hermes
 
-Ask any Islamic question in your OpenClaw chat. The skill activates automatically when it detects Islamic topics. You can also invoke it explicitly:
+```bash
+hermes skills install rhapsodixx/skill-islamic-salafi/skills/islamic-salafi
+```
+
+Or add the repository as a tap (Hermes reads taps from `skills/`):
+
+```bash
+hermes skills tap add rhapsodixx/skill-islamic-salafi
+```
+
+Installing from a raw `SKILL.md` URL also works but skips the `references/` files, so prefer the forms above.
+
+### ChatGPT Business, Enterprise, Edu
+
+Native Skills (beta). A workspace admin must enable skills and skill uploading under Permissions and roles. Then zip the skill folder and upload it:
+
+```bash
+cd skills && zip -r islamic-salafi.zip islamic-salafi
+```
+
+In ChatGPT go to Skills, Create, Upload from your computer.
+
+### ChatGPT Free and Plus (Project)
+
+Create a Project, then:
+
+1. Paste the contents of [`chatgpt/instructions.md`](chatgpt/instructions.md) into the project instructions.
+2. Upload [`chatgpt/knowledge.md`](chatgpt/knowledge.md) as a project file.
+
+Both files are generated by `scripts/build-chatgpt.sh`; do not edit them by hand. (verify: the project instructions character limit is unconfirmed. Third-party sources report figures from 1,500 to 8,000 and OpenAI does not publish one. `instructions.md` is about 6.4K characters. If your plan rejects it, tell us in an issue. Free plans allow 5 project files; this bundle uses 1.)
+
+## Persona
+
+An optional, separate file, [`persona/islamic-adab.md`](persona/islamic-adab.md), sets natural Islamic expressions and honorifics in general chat. It is copy-paste only: no hook, plugin or installer. Append it to your tool's global instructions file:
+
+| Tool | Paste into | One-liner |
+|---|---|---|
+| Claude Code | `~/.claude/CLAUDE.md` | `curl -fsSL https://raw.githubusercontent.com/rhapsodixx/skill-islamic-salafi/main/persona/islamic-adab.md >> ~/.claude/CLAUDE.md` |
+| Codex | `~/.codex/AGENTS.md` | `curl -fsSL https://raw.githubusercontent.com/rhapsodixx/skill-islamic-salafi/main/persona/islamic-adab.md >> ~/.codex/AGENTS.md` |
+| OpenClaw | `~/.openclaw/workspace/SOUL.md` (per workspace) | `curl -fsSL https://raw.githubusercontent.com/rhapsodixx/skill-islamic-salafi/main/persona/islamic-adab.md >> ~/.openclaw/workspace/SOUL.md` |
+| Hermes | `~/.hermes/SOUL.md` | `curl -fsSL https://raw.githubusercontent.com/rhapsodixx/skill-islamic-salafi/main/persona/islamic-adab.md >> ~/.hermes/SOUL.md` |
+| ChatGPT | Settings, Personalization, Custom instructions (or a Project's instructions) | copy-paste only |
+
+Notes:
+
+- Create the target directory first if it does not exist (`mkdir -p ~/.claude`, `~/.codex`, `~/.openclaw/workspace` or `~/.hermes`).
+- For Codex use `~/.codex/AGENTS.md`, never `AGENTS.override.md`, which replaces your own file.
+- The file is wrapped in `<!-- islamic-adab:start -->` and `<!-- islamic-adab:end -->` markers.
+- Re-running a one-liner appends a duplicate. To update, replace the block between the markers. To remove, delete the block.
+
+## File structure
 
 ```text
-/islamic-salafi <your question>
+.claude-plugin/        plugin.json, marketplace.json (Claude Code)
+skills/islamic-salafi/ SKILL.md and references/ (the skill itself)
+chatgpt/               generated ChatGPT Project bundle
+persona/               optional adab persona
+scripts/               check.py, tests, citation allow-list, build-chatgpt.sh
+evals/                 behaviour eval cases
+.github/               CI, AI review, evals, PR template
 ```
 
-### Keeping the skill up to date
+## License
 
-```bash
-cd ~/.openclaw/skills/islamic-salafi && git pull
-```
+- Skill content (`skills/**`, `chatgpt/**`, `persona/*.md`, docs): [CC BY-SA 4.0](LICENSE-CONTENT).
+- Scripts and CI: [MIT](LICENSE).
 
----
+## Contributing
 
-*Barakallahu fiikum. May Allah grant us correct knowledge and the ability to act upon it.*
+See [CONTRIBUTING.md](CONTRIBUTING.md). Maintainers: the AI review and eval workflows need one-time setup, see [Maintainer setup](CONTRIBUTING.md#maintainer-setup).

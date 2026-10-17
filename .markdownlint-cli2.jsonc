@@ -1,0 +1,7 @@
+{
+  // MD041: persona/islamic-adab.md is a paste-in snippet and starts at H2 by design.
+  // MD060: table pipe spacing style is cosmetic; not worth touching table content.
+  "config": { "default": true, "MD013": false, "MD033": false, "MD041": false, "MD060": false },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**", ".venv/**", ".superpowers/**", "chatgpt/**", "docs/superpowers/**"]
+}

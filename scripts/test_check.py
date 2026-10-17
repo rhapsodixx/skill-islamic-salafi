@@ -3,7 +3,7 @@ import shutil, sys, tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from check import char_len, strip_frontmatter, find_citations, run_checks
+from check import char_len, strip_frontmatter, find_citations, entries, run_checks, GRADER
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -14,6 +14,21 @@ assert find_citations("(HR. Bukhari no. 2697, Muslim no. 1718)") == ["bukhari 26
 assert find_citations("islamqa.info fatwa no.258320") == ["islamqa 258320"]
 assert find_citations("HR. Muslim nomor 91") == ["muslim 91"]
 assert find_citations("Lajnah Da'imah 5/266") == []
+# Spelling variants, bare parentheticals, URLs and Lajnah numbers are all caught and normalized.
+assert find_citations("HR. At-Tirmidhi no. 3537") == ["tirmidhi 3537"]
+assert find_citations("HR. An-Nasa'i no. 1578") == ["nasa'i 1578"]
+assert find_citations("HR. Abu Daud no. 5") == ["abu dawud 5"]
+assert find_citations("HR. Ibnu Majah no. 1") == ["ibn majah 1"]
+assert find_citations("Sahih Muslim no. 55") == ["muslim 55"]
+assert find_citations("(Bukhari 2697)") == ["bukhari 2697"]
+assert find_citations("islamqa.info/id/answers/999") == ["islamqa 999"]
+assert find_citations("islamqa.info/en/answers/999") == ["islamqa 999"]
+assert find_citations("Lajnah Da'imah no. 4011") == ["lajnah 4011"]
+assert find_citations("Lajnah no. 4011") == ["lajnah 4011"]
+assert find_citations("(see Fataawa al-Lajnah al-Daa'imah 5/266)") == []
+assert find_citations("(written 17 October 2026, Ramadan 1447)") == []
+assert find_citations("no. 77") == ["unknown 77"]
+assert entries(["Abu Daud 179  # x", "- An-Nasa'i 1", "islamqa.info 1027", "# c", ""]) == {"abu dawud 179", "nasa'i 1", "islamqa 1027"}
 
 
 def temp_repo():
@@ -52,7 +67,17 @@ shutil.rmtree(p)
 skill.write_text(orig + "\nislamqa.info fatwa no. 99999\n")
 f = [m for m in run_checks(r) if "99999" in m]
 assert len(f) == 1, f
+skill.write_text(orig + "\n(HR. Abu Daud no. 179; Lajnah Da'imah no. 4011)\n")
+f = [m for m in run_checks(r) if "citation" in m]
+assert len(f) == 1 and "'lajnah 4011'" in f[0], f
 skill.write_text(orig)
+
+grader = r / GRADER
+g = grader.read_text(encoding="utf-8")
+grader.write_text(g + "- tirmidhi 3537\n", encoding="utf-8")
+f = run_checks(r)
+assert len(f) == 1 and "criteria.md" in f[0] and "citations-allowlist.txt" in f[0] and "tirmidhi 3537" in f[0], f
+grader.write_text(g, encoding="utf-8")
 
 with open(r / "chatgpt/knowledge.md", "a") as fh:
     fh.write("hand edit\n")

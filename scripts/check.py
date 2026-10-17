@@ -4,12 +4,26 @@ import argparse, json, re, shutil, subprocess, sys, tempfile
 from pathlib import Path
 
 SKILL = "islamic-salafi"
-COLL = r"(Bukhari|Muslim|Abu Dawud|Tirmidhi|Nasa'i|Ibn Majah|Ahmad)"
-NUM = r"\s+(?:no\.?|nomor)\s*(\d+)"
-ITEM = COLL + NUM
-HR = re.compile(r"HR\.?\s*" + ITEM + r"(?:\s*,\s*" + ITEM + r")*", re.I)
-ITEM_RE = re.compile(ITEM, re.I)
-QA = re.compile(r"islamqa\.info\s+fatwa" + NUM, re.I)
+GRADER = Path("evals/no-fabricated-citations/graders/criteria.md")
+# Source key -> spelling variants. Keys are what the allow-list stores.
+SOURCES = {
+    "bukhari": r"(?:Al-)?Bukhari",
+    "muslim": r"Muslim",
+    "abu dawud": r"Abu\s+Da(?:wu|u|woo)d",
+    "tirmidhi": r"(?:At-|Al-)?Tirmidh?i",
+    "nasa'i": r"(?:An-|Al-)?Nasa['’]?i",
+    "ibn majah": r"Ibnu?\s+Majah",
+    "ahmad": r"Ahmad",
+    "islamqa": r"islamqa(?:\.info)?",
+    "lajnah": r"(?:Al-)?Lajnah(?:\s+(?:Al-)?Da['’]?a?imah)?",
+}
+HADITH = ("bukhari", "muslim", "abu dawud", "tirmidhi", "nasa'i", "ibn majah", "ahmad")
+SRC_RE = re.compile(r"\b(?:" + "|".join(SOURCES.values()) + r")\b", re.I)
+# Any "no. N" / "nomor N" / ".../answers/N" anywhere is a citation number.
+NUM_RE = re.compile(r"(?:\b(?:no\.?|nomor)\s*|answers/)(\d+)", re.I)
+# Bare "<collection> N" inside a parenthetical, e.g. "(Bukhari 2697)"; "5/266" is volume/page, not a number.
+BARE_RE = re.compile(r"\b(" + "|".join(SOURCES[k] for k in HADITH) + r")\s+(\d+)(?![\d/])", re.I)
+PAREN_RE = re.compile(r"\([^()]*\)")
 
 
 def read(p: Path) -> str:
@@ -26,15 +40,35 @@ def strip_frontmatter(text: str) -> str:
     return text[m.end():] if m else text
 
 
-def find_citations(text: str) -> list[str]:
-    found = []  # (position, citation)
-    for m in QA.finditer(text):
-        found.append((m.start(), f"islamqa {m.group(1)}"))
-    for m in HR.finditer(text):
-        for i in ITEM_RE.finditer(m.group(0)):
-            found.append((m.start() + i.start(), f"{i.group(1).lower()} {i.group(2)}"))
-    return [c for _, c in sorted(found)]
+def canon(src: str) -> str:
+    """Map a source spelling (e.g. 'Abu Daud', 'An-Nasa'i', 'islamqa.info') to its key."""
+    for k, v in SOURCES.items():
+        if re.fullmatch(v, src.strip(), re.I):
+            return k
+    return src.strip().lower()
 
+
+def find_citations(text: str) -> list[str]:
+    found = {}  # position -> normalized "<source> <number>"
+    for m in NUM_RE.finditer(text):
+        line_start = text.rfind("\n", 0, m.start()) + 1
+        srcs = list(SRC_RE.finditer(text, max(line_start, m.start() - 80), m.start()))
+        found[m.start(1)] = f"{canon(srcs[-1].group(0)) if srcs else 'unknown'} {m.group(1)}"
+    for p in PAREN_RE.finditer(text):
+        for m in BARE_RE.finditer(text, p.start(), p.end()):
+            found.setdefault(m.start(2), f"{canon(m.group(1))} {m.group(2)}")
+    return [found[k] for k in sorted(found)]
+
+
+def entries(lines) -> set[str]:
+    """Normalize '<source> <number>' lines (comments and blanks ignored)."""
+    out = set()
+    for l in lines:
+        l = l.split("#")[0].strip().lstrip("-").strip()
+        m = re.fullmatch(r"(.+?)\s+(\d+)", l)
+        if m:
+            out.add(f"{canon(m.group(1))} {m.group(2)}")
+    return out
 
 def find_agentskills(root: Path):
     # fall back to .venv of the target root, then of this script's own repo
@@ -111,11 +145,19 @@ def run_checks(root: Path) -> list[str]:
 
     # 8: citations
     al = root / "scripts" / "citations-allowlist.txt"
-    allowed = {l.split("#")[0].strip().lower() for l in read(al).splitlines()} - {""}
+    allowed = entries(read(al).splitlines())
     for md in sorted((root / "skills").rglob("*.md")):
         for c in find_citations(read(md)):
             if c not in allowed:
                 errs.append(f"{md}: citation {c!r} not in citations-allowlist.txt")
+
+    # 9: eval grader allow-list matches scripts/citations-allowlist.txt
+    grader = root / GRADER
+    if grader.exists():
+        g = entries(l for l in read(grader).splitlines() if l.startswith("- "))
+        if g != allowed:
+            errs.append(f"{grader} and {al} allow-lists differ: only in grader {sorted(g - allowed)}, "
+                        f"only in allow-list {sorted(allowed - g)}")
     return errs
 
 

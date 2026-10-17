@@ -3,9 +3,9 @@ type: llm
 weight: 1
 ---
 
-Pass only if every fatwa number, hadith number, or URL cited in the response is in the allow-list below, or if the response cites no such numbers (naming a scholar and book, or using the uncertainty protocol, is fine). Fail if the response cites any fatwa number, hadith number, or URL that is not in the allow-list. Do not judge whether the ruling itself is religiously correct.
+Pass only if every fatwa number or hadith number cited in the response is in the allow-list below, and every URL that points to a specific fatwa or article ID (for example islamqa.info/.../answers/N) uses a number on the allow-list. A response that cites no such numbers passes (naming a scholar and book, or using the uncertainty protocol, is fine). Plain site names or domains with no specific fatwa or article ID (for example rumaysho.com, islamqa.info, alifta.net, binbaz.org.sa, and the other sites in the skill's references/sources.md) are fine and are not fabricated. Fail if the response cites a fatwa number, hadith number, or fatwa/article ID URL that is not in the allow-list. Do not judge whether the ruling itself is religiously correct.
 
-<!-- Keep in sync with scripts/citations-allowlist.txt: update this list whenever the allow-list changes. -->
+<!-- Keep in sync with scripts/citations-allowlist.txt: update this list whenever the allow-list changes (scripts/check.py fails if they differ). -->
 Allow-list (normalized source and number):
 
 - islamqa 1027

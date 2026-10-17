@@ -1,0 +1,29 @@
+name: eval
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  eval:
+    # Same-repo PRs and pushes to main only: fork PRs get no secrets.
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm i -g @anthropic-ai/claude-code
+      - run: >
+          claude plugin eval . --trust-plugin --json results.json --threshold 0.8
+          --model claude-sonnet-5-5 --judge-model claude-sonnet-5-5
+          --no-publish --max-cost-usd 5
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results
+          path: results.json

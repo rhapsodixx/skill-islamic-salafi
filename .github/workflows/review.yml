@@ -1,0 +1,35 @@
+name: review
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+permissions:
+  contents: read
+  pull-requests: write
+  id-token: write
+jobs:
+  review:
+    # Runs on same-repo PRs only: fork PRs get no secrets and must never run this.
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Review the files changed in this pull request under skills/ and persona/ as prompt text.
+            Post inline comments on specific lines. Check each rule below and cite the rule number.
+
+            1. Citations: a fatwa number, hadith number, or URL may appear only if it is in the reference files (and scripts/citations-allowlist.txt). Flag any invented-looking number or URL, and any wording that pressures the model to produce a citation or number it does not have.
+            2. Emphasis: MUST/NEVER only for true invariants (no novel fatwas; grade every cited hadith; stay within scope), each with a one-line reason. Flag shouting, ALL CAPS, or MUST/NEVER used elsewhere.
+            3. One response shape that covers the simple and the layered Shafi'i case. Flag examples that do not match it.
+            4. Format: Markdown headings, sentence-case headers, XML tags only to fence examples.
+            5. Description: third person, says what and when, keeps the Indonesian and English trigger phrases, at most 1,024 characters.
+            6. Progressive disclosure: SKILL.md links each reference with a "read when" line.
+            7. Staleness: suspected out-of-date facts get a TODO(maintainer) comment; the fact is not changed.
+
+            Also flag: contradictions between instructions or between SKILL.md and its references, wording that works for Claude but would confuse GPT or other models (cross-model wording), and size limits (SKILL.md body at most 8,000 characters and 500 lines; persona/islamic-adab.md at most 1,500 characters including its markers).
+
+            Do NOT judge religious correctness: do not evaluate whether a ruling, scholar position, or madhab claim is right or wrong. Review only prompt quality and the rules above.

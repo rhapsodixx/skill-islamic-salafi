@@ -56,3 +56,8 @@ venv/
 dist/
 build/
 *.egg-info/
+
+# Eval results
+evals/results/
+results.json
+.superpowers/

@@ -108,7 +108,7 @@ English. The Shafi'i position aligns with strong daleel.
 *Bismillah.*
 
 **Daleel (Evidence):**
-The Prophet ﷺ said: *"Whoever introduces into this affair of ours something that does not belong to it, it will be rejected."* (HR. Bukhari no. 2697, Muslim no. 1718)
+The Prophet ﷺ said: *"Whoever introduces into this affair of ours something that does not belong to it, it will be rejected."* (HR. Bukhari no. 2697, Muslim no. 1718 — muttafaq 'alayh (agreed upon by Bukhari and Muslim), sahih)
 
 **Positions:**
 Neither the Shafi'i madhab nor the broader Salafi scholarship has any basis for birthday celebrations. Shaykh Ibn Baz (rahimahullah) and Shaykh Al-Fawzan have stated it is a bid'ah with no precedent from the Prophet ﷺ or his Companions. (islamqa.info fatwa no. 1027)

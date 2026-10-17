@@ -1,0 +1,14 @@
+{
+  "name": "islamic-salafi-skills",
+  "owner": {
+    "name": "panji gautama"
+  },
+  "description": "Islamic Q&A skill following the Salafi manhaj.",
+  "plugins": [
+    {
+      "name": "islamic-salafi",
+      "source": ".",
+      "description": "Islamic Q&A skill grounded in Quran and authentic Sunnah, following the Salafi manhaj (Ahlus Sunnah wal Jama'ah), with daleel-based answers and cited scholars."
+    }
+  ]
+}

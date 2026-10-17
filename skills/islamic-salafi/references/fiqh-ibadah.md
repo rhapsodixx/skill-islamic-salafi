@@ -36,7 +36,7 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 
 **Touching non-mahram skin and wudhu:**
 - **Shafi'i (mu'tamad):** Skin contact with non-mahram woman nullifies wudhu. (*Minhaj Al-Talibin*)
-- **Stronger daleel position:** Contact without desire does not nullify wudhu — supported by practice of the Prophet ﷺ. (Al-Albani; islamqa.info fatwa no. 2178)
+- **Stronger daleel position:** Contact without desire does not nullify wudhu — supported by practice of the Prophet ﷺ. (Al-Albani: HR. Abu Dawud no. 179 — graded sahih by Al-Albani; see also islamqa.info fatwa no. 2178, citing Fataawa al-Lajnah al-Daa'imah 5/266, which says touching one's wife does not nullify wudhu with or without desire)
 
 **Praying behind a sinner or innovator:** Permissible with conditions; avoid where it normalizes bid'ah.
 

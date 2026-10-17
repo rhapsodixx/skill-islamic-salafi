@@ -15,7 +15,7 @@ Specialist scholar: **Ustaz Erwandi Tarmizi** | Primary reference: PengusahaMusl
 - Credit card interest charges = **haram**
 - Installment sale with a price increase: **permissible** if the final price is fixed and agreed upon at the time of the contract (some ikhtilaf exists; this is the majority Salafi position)
 
-**Key fatwa:** Lajnah Da'imah no. 4011; islamqa.info fatwa no. 22905
+**Key fatwa:** islamqa.info fatwa no. 13973
 
 ---
 
@@ -49,7 +49,7 @@ An Islamic contract requires:
   - Highly speculative nature (resembles maysir)
   - No intrinsic commodity backing
   - Extreme gharar (price volatility and uncertainty)
-- **Reference:** islamqa.info fatwa no. 258320; positions vary among contemporary scholars
+- **Reference:** islamqa.info fatwa no. 360668; positions vary among contemporary scholars <!-- TODO(maintainer): verify 360668 and 504160; confirm gharar/maysir wording -->
 
 ### Dropshipping / E-Commerce
 - Selling goods one does not yet own before taking possession: scholarly ikhtilaf

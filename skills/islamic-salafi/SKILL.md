@@ -107,8 +107,8 @@ Imam Shafi'i revised many of his earlier opinions after relocating to Egypt. The
 | Shaykh Ibn Baz | rahimahullah | binbaz.org.sa |
 | Shaykh Ibn Uthaymeen | rahimahullah | ibnothaimeen.com |
 | Shaykh Al-Albani | rahimahullah | Hadith tashih/tadh'if |
-| Shaykh Salih Al-Fawzan | Active | alfawzan.net |
-| Shaykh Rabi' bin Hadi Al-Madkhali | Active | rabee.net |
+| Shaykh Salih Al-Fawzan | Active <!-- TODO(maintainer): verify --> | alfawzan.net |
+| Shaykh Rabi' bin Hadi Al-Madkhali | Active <!-- TODO(maintainer): verify --> | rabee.net |
 | Shaykh Muqbil bin Hadi Al-Wadi'i | rahimahullah | Yemeni Salafi scholarship |
 
 ### International Reference Websites
@@ -225,7 +225,7 @@ A Muslim should leave birthday celebrations and replace them with righteous deed
 In the relied-upon (mu'tamad) position of the Shafi'i madhab, touching the skin of a non-mahram woman — even without desire — nullifies wudhu. This is based on the apparent meaning of Quran 4:43 (*"aw laamastum al-nisaa'"*) as interpreted by Imam Shafi'i. (Reference: *Minhaj Al-Talibin*, Imam Nawawi)
 
 **Stronger Daleel — Alternative Position:**
-However, many scholars, including Shaykh Al-Albani (rahimahullah) and Ibn Hazm, held that skin contact alone does not nullify wudhu unless accompanied by desire or actual sexual discharge. Their evidence: the Prophet ﷺ kissed some of his wives and then prayed without renewing wudhu. (HR. Abu Dawud no. 179 — graded hasan by Al-Albani; also cited in islamqa.info fatwa no. 2178)
+However, many scholars, including Shaykh Al-Albani (rahimahullah) and Ibn Hazm, held that skin contact alone does not nullify wudhu unless accompanied by desire or actual sexual discharge. Their evidence: the Prophet ﷺ kissed some of his wives and then prayed without renewing wudhu. (HR. Abu Dawud no. 179 — graded sahih by Al-Albani; see also islamqa.info fatwa no. 2178, citing Fataawa al-Lajnah al-Daa'imah 5/266, which says touching one's wife does not nullify wudhu with or without desire)
 
 **Guidance:**
 If you follow the Shafi'i madhab, renew your wudhu after such contact. If you adopt the daleel-based opinion of Al-Albani and others, skin contact without desire does not require renewal. Both positions are held by recognized scholars. The more cautious (ihtiyat) approach is to follow the Shafi'i position.
@@ -244,7 +244,7 @@ If you follow the Shafi'i madhab, renew your wudhu after such contact. If you ad
 Dalam pendapat yang dipegang (mu'tamad) dalam Madhab Syafi'i, menyentuh kulit wanita bukan mahram — meski tanpa syahwat — membatalkan wudhu. Dalilnya adalah zahir firman Allah dalam QS. An-Nisa: 43 (*"aw laamastum al-nisaa'"*) sebagaimana ditafsirkan Imam Syafi'i. (Rujukan: *Minhaj Al-Talibin*, Imam Nawawi)
 
 **Pendapat yang Lebih Kuat Berdasarkan Dalil:**
-Namun, sejumlah ulama — di antaranya Syaikh Al-Albani (rahimahullah) dan Ibnu Hazm — berpendapat bahwa sentuhan kulit semata tidak membatalkan wudhu kecuali disertai syahwat atau keluarnya sesuatu. Dalilnya: Nabi ﷺ pernah mencium sebagian istrinya lalu shalat tanpa memperbarui wudhu. (HR. Abu Dawud no. 179 — dihasankan Al-Albani; lihat juga islamqa.info fatwa no. 2178)
+Namun, sejumlah ulama — di antaranya Syaikh Al-Albani (rahimahullah) dan Ibnu Hazm — berpendapat bahwa sentuhan kulit semata tidak membatalkan wudhu kecuali disertai syahwat atau keluarnya sesuatu. Dalilnya: Nabi ﷺ pernah mencium sebagian istrinya lalu shalat tanpa memperbarui wudhu. (HR. Abu Dawud no. 179 — disahihkan Al-Albani; lihat juga islamqa.info fatwa no. 2178, yang mengutip Fataawa al-Lajnah al-Daa'imah 5/266, bahwa menyentuh istri tidak membatalkan wudhu baik dengan syahwat maupun tanpa syahwat)
 
 **Panduan Praktis:**
 Jika Anda mengikuti Madhab Syafi'i, perbaruilah wudhu setelah menyentuh wanita bukan mahram. Jika mengambil pendapat Al-Albani dan ulama lain yang serupa, sentuhan tanpa syahwat tidak membatalkan wudhu. Kedua pendapat ini dipegang oleh ulama yang diakui. Sikap yang lebih berhati-hati (ihtiyat) adalah mengikuti posisi Syafi'i.

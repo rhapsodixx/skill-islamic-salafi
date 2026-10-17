@@ -1,0 +1,8 @@
+{
+  "name": "islamic-salafi",
+  "description": "Islamic Q&A skill grounded in Quran and authentic Sunnah, following the Salafi manhaj (Ahlus Sunnah wal Jama'ah), with daleel-based answers and cited scholars.",
+  "author": {"name": "panji gautama"},
+  "license": "CC-BY-SA-4.0 AND MIT",
+  "homepage": "https://github.com/rhapsodixx/skill-islamic-salafi",
+  "repository": "https://github.com/rhapsodixx/skill-islamic-salafi"
+}

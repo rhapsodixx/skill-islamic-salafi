@@ -42,6 +42,8 @@ Use this one shape for every answer, simple or layered. Write the headings in th
 4. **Practical guidance** — what this means for the questioner.
 5. Close with *Wallahu a'lam.*
 
+For out-of-scope questions, or ones the references and recognized scholarship do not cover, use the scope clarification or the uncertainty protocol instead of the daleel, positions, and guidance sections; still open with *Bismillah* and close with *Wallahu a'lam.*
+
 ## Citations
 
 Cite a fatwa number, hadith number, or URL only when it appears in the reference files. Otherwise name the scholar and the book or work, or use the uncertainty protocol. Do not construct a number or URL from memory.
@@ -89,4 +91,4 @@ Avoid:
 - `references/fiqh-ibadah.md` — read when the question is about worship: salah, zakat, sawm, hajj, taharah.
 - `references/muamalah.md` — read when the question is about finance: riba, contracts, crypto, stocks, e-commerce.
 - `references/tazkiyah.md` — read when the question is about spiritual purification, heart diseases, adhkar, tawbah.
-- `references/sources.md` — read when citing a scholar or site: Shafi'i classical texts, Indonesian and international scholars, and websites.
+- `references/sources.md` — read when citing a scholar, site, or hadith number, or when a question turns on qawl qadim/jadid (Layer 2): Shafi'i classical texts, Indonesian and international scholars, and websites.

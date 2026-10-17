@@ -54,7 +54,7 @@ An Islamic contract requires:
   - Highly speculative nature (resembles maysir)
   - No intrinsic commodity backing
   - Extreme gharar (price volatility and uncertainty)
-- **Reference:** islamqa.info fatwa no. 360668; positions vary among contemporary scholars <!-- TODO(maintainer): verify 360668 and 504160; confirm gharar/maysir wording -->
+- **Reference:** islamqa.info fatwa no. 360668; positions vary among contemporary scholars <!-- TODO(maintainer): verify 360668 and the follow-up islamqa answer on immediate crypto trading; confirm gharar/maysir wording -->
 
 ### Dropshipping / E-Commerce
 

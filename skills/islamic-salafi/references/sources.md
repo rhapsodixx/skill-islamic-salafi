@@ -5,6 +5,7 @@ Hadith numbers for Sahih Muslim use Fu'ad Abdul Baqi numbering.
 ## Shafi'i Classical & Reference Sources
 
 **Classical Texts (primary fiqh references):**
+
 | Text | Author | Notes |
 |------|--------|-------|
 | *Al-Umm* | Imam Shafi'i (rahimahullah) | Primary source; qawl jadid preferred |
@@ -18,11 +19,13 @@ Hadith numbers for Sahih Muslim use Fu'ad Abdul Baqi numbering.
 
 **Key principle — Qawl Jadid over Qawl Qadim:**
 Imam Shafi'i revised many of his earlier opinions after relocating to Egypt. The **qawl jadid (new opinion)** is the mu'tamad (relied-upon) position of the madhab. Notable reversals include:
+
 - Basmalah in prayer: qawl jadid = recite aloud in jahriyyah prayers (Fajr, Maghrib, Isha)
 - Touching the opposite sex nullifying wudhu: qawl jadid maintains it does; but many scholars note the daleel is debated
 - Various rulings on water purity, prayer timings, and transactions
 
 **Indonesian Shafi'i-aligned Scholars (also within Salafi/Ahlus Sunnah framework):**
+
 - **Ustaz Aris Munandar** — Fiqh, Shafi'i-Salafi integration
 - **Ustaz Abdul Hakim Abdat** — Hadith, fiqh comparison
 - Works of **Imam Nawawi Al-Bantani** (rahimahullah) — classical Indonesian Shafi'i scholarship
@@ -41,6 +44,7 @@ Imam Shafi'i revised many of his earlier opinions after relocating to Egypt. The
 | PengusahaMuslim.com | Muamalah & financial fiqh | pengusahamuslim.com |
 
 ## Recognized Indonesian Scholars (Ustaz)
+
 - **Ustaz Khalid Basalamah** — General fiqh, aqeedah, dawah
 - **Ustaz Firanda Andirja** — Aqeedah, fiqh, hadith
 - **Ustaz Syafiq Riza Basalamah** — Fiqh, tazkiyah
@@ -62,6 +66,7 @@ Imam Shafi'i revised many of his earlier opinions after relocating to Egypt. The
 | Shaykh Muqbil bin Hadi Al-Wadi'i | rahimahullah | Yemeni Salafi scholarship |
 
 ## International Reference Websites
+
 - **islamqa.info** — Shaykh Muhammad Salih Al-Munajjid; comprehensive fatwa database
 - **alifta.net** — Saudi Arabia's official fatwa council (Lajnah Da'imah)
 - **salaficentre.com / salafipublications.com** — English Salafi resources

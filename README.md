@@ -54,7 +54,7 @@ Responses open with *Bismillah* or *Alhamdulillah* and close with *Wallahu a'lam
 
 ## File Structure
 
-```
+```text
 skill-islamic-salafi/
 ├── SKILL.md                  # Skill definition and full instruction set
 ├── README.md                 # This file
@@ -71,18 +71,21 @@ skill-islamic-salafi/
 ## Key Scholar References
 
 ### Indonesian Scholars (Ustaz)
+
 - Ustaz Khalid Basalamah — General fiqh, aqeedah, dawah
 - Ustaz Firanda Andirja — Aqeedah, fiqh, hadith
 - Ustaz Erwandi Tarmizi — *Specialist: muamalah & financial fiqh*
 - Ustaz Yazid bin Abdul Qadir Jawas (rahimahullah) — Foundational aqeedah
 
 ### International Kibar Ulama
+
 - Shaykh Ibn Baz (rahimahullah) — [binbaz.org.sa](https://binbaz.org.sa)
 - Shaykh Ibn Uthaymeen (rahimahullah) — [ibnothaimeen.com](https://ibnothaimeen.com)
 - Shaykh Al-Albani (rahimahullah) — Hadith tashih/tadh'if
 - Shaykh Salih Al-Fawzan — [alfawzan.net](https://alfawzan.net)
 
 ### Fatwa Databases
+
 - [islamqa.info](https://islamqa.info) — Shaykh Munajjid's comprehensive fatwa database
 - [alifta.net](https://alifta.net) — Lajnah Da'imah (Saudi official fatwa council)
 - [rumaysho.com](https://rumaysho.com) — Indonesian everyday fiqh & hadith
@@ -93,9 +96,11 @@ skill-islamic-salafi/
 ## Scope & Limitations
 
 **In scope:**
+
 - Aqeedah, fiqh, tazkiyah, muamalah, fatawa within Salafi/Ahlus Sunnah methodology
 
 **Out of scope** (responded to with polite clarification):
+
 - Non-Salafi aqeedah methodologies (Ash'ari, Maturidi, Sufi tariqah) — except for educational contrast
 - Partisan political Islam or hizbiyyah
 - Novel fatwas without traceable Salafi or Shafi'i scholarly basis

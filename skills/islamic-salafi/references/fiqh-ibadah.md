@@ -7,6 +7,7 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 ## SALAH (Prayer)
 
 ### Conditions for a Valid Prayer
+
 1. Islam
 2. Sanity (aql)
 3. Reaching puberty (baligh) — children should be taught from age 7 and instructed firmly by age 10
@@ -18,23 +19,28 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 ### Key Positions on Prayer — Shafi'i First
 
 **Basmalah (Bismillah) recitation:**
+
 - **Shafi'i (mu'tamad):** Recite Bismillah aloud in jahriyyah prayers (Fajr, Maghrib, Isha) — it is a verse of Al-Fatihah and must be recited. (Imam Nawawi, *Al-Majmu'*)
 - **Salafi/Hanbali:** Basmalah is recited quietly — the stronger hadith evidence supports silent recitation. (Shaykh Ibn Uthaymeen; HR. Muslim no. 399 supports quiet recitation)
 - *Note: Both are valid scholarly positions; the Shafi'i position is the mu'tamad for those following this madhab.*
 
 **Qunut in Fajr:**
+
 - **Shafi'i (mu'tamad):** Qunut Al-Fajr after ruku' in the second rak'ah is sunnah, consistently practiced. (*Minhaj Al-Talibin*; *Fath Al-Mu'in*)
 - **Salafi/majority:** No consistent qunut in Fajr — the hadith evidence for it is weak; Qunut Nazilah only during specific calamities. (Shaykh Al-Albani; Shaykh Ibn Baz)
 - *Note: This is a well-known ikhtilaf. The Shafi'i position is well-supported within the madhab. Salafi scholars prefer abandoning it based on hadith grading.*
 
 **Raising the hands (Raf' al-Yadayn):**
+
 - **Shafi'i and Salafi (agreed):** Sunnah at the opening takbir, before and after ruku' — authenticated in Bukhari and Muslim. Both agree on this.
 
 **Placing hands on chest during standing (qiyam):**
+
 - **Shafi'i:** Hands placed on chest/upper abdomen area. (*Al-Umm*)
 - **Salafi:** Same position — based on hadith of Sahl ibn Sa'd (HR. Bukhari). Agreement on this.
 
 **Touching non-mahram skin and wudhu:**
+
 - **Shafi'i (mu'tamad):** Skin contact with non-mahram woman nullifies wudhu. (*Minhaj Al-Talibin*)
 - **Stronger daleel position:** Contact without desire does not nullify wudhu — supported by practice of the Prophet ﷺ. (Al-Albani: HR. Abu Dawud no. 179 — graded sahih by Al-Albani; see also islamqa.info fatwa no. 2178, citing Fataawa al-Lajnah al-Daa'imah 5/266, which says touching one's wife does not nullify wudhu with or without desire)
 
@@ -47,12 +53,14 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 ## ZAKAT (Obligatory Almsgiving)
 
 ### Nisab Thresholds
+
 - **Gold:** 85 grams
 - **Silver:** 595 grams
 - For cash and trade assets, use the silver nisab — it is the more conservative and protective standard for zakat recipients
 - **Rate:** 2.5% annually on zakatable wealth that has been held for a full lunar year (hawl)
 
 ### Zakat Al-Fitr
+
 - **Amount:** 1 sha' (~2.5 kg) of the local staple food (rice in Indonesia)
 - **Deadline:** Must be paid before the Eid Al-Fitr prayer
 - **Paying in cash:** Scholarly ikhtilaf exists — Shaykh Ibn Baz and the majority prefer food; some Indonesian scholars permit cash payment for practical reasons
@@ -62,6 +70,7 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 ## SAWM (Fasting — Ramadan)
 
 ### Actions That Invalidate the Fast
+
 1. Eating or drinking intentionally
 2. Sexual intercourse
 3. Intentional vomiting
@@ -69,6 +78,7 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 5. Apostasy (riddah)
 
 ### Common Fasting Questions
+
 - **Injections / IV drips:** Nutritive IV breaks the fast; purely medicinal (non-nutritive) injections — scholarly ikhtilaf; majority say they do not break the fast
 - **Using a toothbrush or miswak:** Permissible; avoid swallowing toothpaste
 - **Watching prohibited content:** Does not break the fast physically but is sinful and negates the spiritual reward of fasting
@@ -88,6 +98,7 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 ## TAHARAH (Ritual Purity)
 
 ### Categories of Najasah (Ritual Impurity)
+
 - **Mughallazah (Heavy):** From dogs and pigs — 7 washes with one using soil (agreed between Shafi'i and Hanbali; based on sahih hadith)
 - **Mutawassitah (Medium):** Blood, urine, feces, etc. — wash until completely removed
 - **Mukhaffafah (Light):** Urine of a male infant before solid food — sprinkling water sufficient (Shafi'i and Salafi both agree)
@@ -113,6 +124,7 @@ Core worship rulings. The **Shafi'i position is presented first** as the default
 ---
 
 ## SOURCES FOR IBADAH QUESTIONS
+
 - *Minhaj Al-Talibin* and *Al-Majmu'* — Imam Nawawi (classical Shafi'i)
 - *Fath Al-Mu'in* and *I'anah Al-Talibin* — Standard Indonesian pesantren references
 - Rumaysho.com — Detailed daily fiqh articles (Indonesian)

@@ -36,7 +36,7 @@ assert len(f) == 1 and "must start with YAML frontmatter" in f[0], f
 skill.write_text(orig, encoding="utf-8")
 
 p = r / "persona"
-p.mkdir()
+p.mkdir(exist_ok=True)
 start, end = "<!-- islamic-adab:start -->\n", "\n<!-- islamic-adab:end -->\n"
 fill = "ﷺ بسم الله "
 pad = 1500 - len(start) - len(end)

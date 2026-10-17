@@ -7,6 +7,7 @@ Purification of the soul according to the Quran, Sunnah, and the understanding o
 ## FOUNDATION: Tazkiyah Is Achieved Through the Shari'ah
 
 In the Salafi methodology, purification of the soul is not a secret path or mystical discipline — it is accomplished through:
+
 1. Correct aqeedah (sound belief in Allah)
 2. Performing obligatory and supererogatory acts of worship
 3. Adhering to the Sunnah in all affairs — inwardly and outwardly
@@ -20,21 +21,25 @@ In the Salafi methodology, purification of the soul is not a secret path or myst
 ## KEY DISEASES OF THE HEART
 
 ### Riya' (Showing Off in Worship)
+
 - Classified as minor shirk when present in acts of worship
 - **Cure:** Constantly renew one's intention (niyyah) for the sake of Allah alone; remember that Allah alone truly witnesses every action
 - **Reference:** islamqa.info; Ustaz Muhammad Nuzul Dzikri
 
 ### Kibr (Arrogance)
+
 - The Prophet ﷺ defined it as: *"Rejecting the truth and belittling people."* (HR. Muslim no. 91)
 - **Daleel:** *"He who has in his heart the weight of a mustard seed of arrogance shall not enter Paradise."* (HR. Muslim no. 91)
 - **Cure:** Reflect deeply on one's origin (created from clay), one's sins before Allah, and the certainty of standing before Him on the Day of Judgment
 
 ### Hasad (Envy)
+
 - **Haram form:** Wishing that a blessing Allah has given to another person be removed from them
 - **Permissible form:** Ghibtah — wishing to have the same blessing for oneself, without wishing its removal from another
 - **Cure:** Make du'a for the person you feel envious of; remind yourself that Allah distributes rizq (provision) according to His infinite wisdom
 
 ### Hubbud Dunya (Excessive Love of This World)
+
 - **Clarification on zuhd (asceticism):** The Sunnah-based definition is not about making halal things haram or abandoning wealth — it means placing greater trust and confidence in what Allah has than in what one possesses
 - *"Zuhd is not to make haram what Allah made halal, nor to waste wealth; rather zuhd is to have more confidence in what Allah has than in what you have."* (Reported by Ibn Majah — chain discussed by scholars)
 
@@ -43,7 +48,9 @@ In the Salafi methodology, purification of the soul is not a secret path or myst
 ## AUTHENTICATED ADHKAR (Daily Remembrance)
 
 ### Morning (After Fajr) and Evening (After Asr) Adhkar
+
 Key authenticated supplications to recite:
+
 - **Ayat Al-Kursi:** 1 time after each obligatory prayer
 - **Al-Ikhlas, Al-Falaq, An-Nas:** 3 times each in the morning and evening
 - **Sayyidul Istighfar:** 1 time in the morning and 1 time in the evening
@@ -52,6 +59,7 @@ Key authenticated supplications to recite:
 **Key reference book:** *Hisn Al-Muslim* (Fortress of the Muslim) by Sa'id bin Ali Al-Qahtani — a verified compilation of authenticated adhkar from the Quran and Sunnah
 
 ### Adhkar After Obligatory Prayer
+
 - SubhanAllah × 33, Alhamdulillah × 33, Allahu Akbar × 33
 - Followed by: *"La ilaha illallah wahdahu la sharika lah, lahul mulku wa lahul hamdu wa huwa 'ala kulli shay'in qadir"* × 1
 - **Daleel:** HR. Muslim no. 597
@@ -61,6 +69,7 @@ Key authenticated supplications to recite:
 ## TAWBAH (Repentance)
 
 ### Four Conditions for a Valid Tawbah
+
 1. **Ceasing the sin** immediately
 2. **Remorse (nadam)** — genuine regret for having committed it
 3. **Firm resolution** not to return to the sin
@@ -86,6 +95,7 @@ Key authenticated supplications to recite:
 ## MAINTAINING SALAFI METHODOLOGY IN TAZKIYAH
 
 Avoid the following as they have no basis in the Sunnah:
+
 - Seeking guidance through dreams or visions
 - Aspiring to "maqamat" (mystical spiritual stations) beyond what is recognized as taqwa and righteous deeds
 - Exclusive dhikr circles with innovated formulas or counts
@@ -96,6 +106,7 @@ Avoid the following as they have no basis in the Sunnah:
 ---
 
 ## SOURCES FOR TAZKIYAH QUESTIONS
+
 - Rumaysho.com — Tazkiyah and character articles (Indonesian)
 - Muslim.or.id — Akhlak and spiritual purification section (Indonesian)
 - Ustaz Muhammad Nuzul Dzikri — Lectures on diseases of the heart

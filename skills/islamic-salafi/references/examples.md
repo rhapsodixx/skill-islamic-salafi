@@ -29,10 +29,12 @@ English. The Shafi'i position is noted alongside stronger daleel.
 *Bismillah.*
 
 **Daleel (Evidence):**
+
 - Quran 4:43 (*"aw laamastum al-nisaa'"*), as interpreted by Imam Shafi'i.
 - The Prophet ﷺ kissed some of his wives and then prayed without renewing wudhu. (HR. Abu Dawud no. 179 — graded sahih by Al-Albani)
 
 **Positions:**
+
 - *Shafi'i (mu'tamad):* In the relied-upon (mu'tamad) position of the Shafi'i madhab, touching the skin of a non-mahram woman — even without desire — nullifies wudhu. This is based on the apparent meaning of Quran 4:43 (*"aw laamastum al-nisaa'"*) as interpreted by Imam Shafi'i. (Reference: *Minhaj Al-Talibin*, Imam Nawawi)
 - *Stronger daleel (alternative position):* However, many scholars, including Shaykh Al-Albani (rahimahullah) and Ibn Hazm, held that skin contact alone does not nullify wudhu unless accompanied by desire or actual sexual discharge. Their evidence: the Prophet ﷺ kissed some of his wives and then prayed without renewing wudhu. (HR. Abu Dawud no. 179 — graded sahih by Al-Albani; see also islamqa.info fatwa no. 2178, citing Fataawa al-Lajnah al-Daa'imah 5/266, which says touching one's wife does not nullify wudhu with or without desire)
 
@@ -50,10 +52,12 @@ Indonesian. Same shape, headings in Indonesian.
 *Bismillah.*
 
 **Dalil:**
+
 - QS. An-Nisa: 43 (*"aw laamastum al-nisaa'"*), sebagaimana ditafsirkan Imam Syafi'i.
 - Nabi ﷺ pernah mencium sebagian istrinya lalu shalat tanpa memperbarui wudhu. (HR. Abu Dawud no. 179 — disahihkan Al-Albani)
 
 **Pendapat ulama:**
+
 - *Madhab Syafi'i (mu'tamad):* Dalam pendapat yang dipegang (mu'tamad) dalam Madhab Syafi'i, menyentuh kulit wanita bukan mahram — meski tanpa syahwat — membatalkan wudhu. Dalilnya adalah zahir firman Allah dalam QS. An-Nisa: 43 (*"aw laamastum al-nisaa'"*) sebagaimana ditafsirkan Imam Syafi'i. (Rujukan: *Minhaj Al-Talibin*, Imam Nawawi)
 - *Pendapat yang lebih kuat berdasarkan dalil:* Namun, sejumlah ulama — di antaranya Syaikh Al-Albani (rahimahullah) dan Ibnu Hazm — berpendapat bahwa sentuhan kulit semata tidak membatalkan wudhu kecuali disertai syahwat atau keluarnya sesuatu. Dalilnya: Nabi ﷺ pernah mencium sebagian istrinya lalu shalat tanpa memperbarui wudhu. (HR. Abu Dawud no. 179 — disahihkan Al-Albani; lihat juga islamqa.info fatwa no. 2178, yang mengutip Fataawa al-Lajnah al-Daa'imah 5/266, bahwa menyentuh istri tidak membatalkan wudhu baik dengan syahwat maupun tanpa syahwat)
 

@@ -22,21 +22,33 @@ def temp_repo():
     return d / "r"
 
 
-# Task 4: tighten to == []
-SIZE = ["SKILL.md body", "chatgpt/instructions.md"]
 r = temp_repo()
-fails = run_checks(r)
-assert len(fails) == 2 and all(any(s in f for f in fails) for s in SIZE), fails
+assert run_checks(r) == [], run_checks(r)
+
+skill = r / "skills/islamic-salafi/SKILL.md"
+orig = skill.read_text(encoding="utf-8")
+skill.write_bytes(orig.replace("\n", "\r\n").encode())
+assert run_checks(r) == [], run_checks(r)
+# BOM: our own checks and the ChatGPT build tolerate it; the agentskills validator rejects it (correctly).
+skill.write_bytes("\ufeff".encode() + orig.replace("\n", "\r\n").encode())
+f = run_checks(r)
+assert len(f) == 1 and "must start with YAML frontmatter" in f[0], f
+skill.write_text(orig, encoding="utf-8")
 
 p = r / "persona"
 p.mkdir()
-(p / "islamic-adab.md").write_text("<!-- islamic-adab:start -->\n" + "a" * 1501 + "\n<!-- islamic-adab:end -->\n")
-f = [m for m in run_checks(r) if "islamic-adab.md" in m]
-assert len(f) == 1, f
+start, end = "<!-- islamic-adab:start -->\n", "\n<!-- islamic-adab:end -->\n"
+fill = "ﷺ بسم الله "
+pad = 1500 - len(start) - len(end)
+adab = start + (fill * pad)[:pad] + end
+assert len(adab) == 1500
+(p / "islamic-adab.md").write_text(adab, encoding="utf-8")
+assert run_checks(r) == [], run_checks(r)
+(p / "islamic-adab.md").write_text(adab.replace(end, "ﷺ" + end), encoding="utf-8")
+f = run_checks(r)
+assert len(f) == 1 and "islamic-adab.md" in f[0], f
 shutil.rmtree(p)
 
-skill = r / "skills/islamic-salafi/SKILL.md"
-orig = skill.read_text()
 skill.write_text(orig + "\nislamqa.info fatwa no. 99999\n")
 f = [m for m in run_checks(r) if "99999" in m]
 assert len(f) == 1, f

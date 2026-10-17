@@ -20,6 +20,7 @@ NOTE='Reference material (aqeedah, fiqh, muamalah, tazkiyah, sources, examples) 
 
 {
   tr -d '\r' < "$SKILL/SKILL.md" | awk '
+    NR == 1 { sub(/^\357\273\277/, "") }
     NR == 1 && $0 == "---" { fm = 1; next }
     fm && $0 == "---" { fm = 0; next }
     !fm { print }'
